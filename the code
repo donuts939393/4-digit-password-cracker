@@ -1,0 +1,17 @@
+from pyautogui import press, typewrite, hotkey
+import time
+print("Put cursor in text box.")
+
+time.sleep(5)
+for i in range(0, 10000):
+    time.sleep(.25)
+    print("Waiting...")
+    s = str(i)
+    passcode = s.zfill(4)
+    typewrite(passcode)
+    press('enter')
+    print("Sent " + passcode)
+    
+        
+
+    
